@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px; /* Increased container width */
+        margin: 50px auto; /* Adjusted margin */
+        background-color: #ffffff; /* White container background color */
+        border-radius: 20px; /* Rounded corners for container */
+        padding: 50px; /* Increased padding */
+        
+    }
+    h1 {
+        color: #333333; /* Dark text color */
+    }
+    .question {
+        font-size: 28px; /* Increased font size */
+        margin-bottom: 30px; /* Added margin at the bottom of the question */
+    }
+    .options {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Center-align buttons */
+    }
+    .btn {
+        padding: 15px 30px; /* Increased padding */
+        margin: 10px; /* Adjusted margin */
+        font-size: 20px; /* Increased font size */
+        cursor: pointer;
+        color: #ffffff; /* White text color */
+        border: none;
+        border-radius: 8px; /* Rounded corners for buttons */
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        opacity: 0.9; /* Slightly reduce opacity on hover */
+    }
+    /* Different shades of blue for each button */
+    .btn:nth-child(1) { background-color: #0077b6; }
+    .btn:nth-child(2) { background-color: #00BFFF; }
+    .btn:nth-child(3) { background-color: #0066b2; }
+    .btn:nth-child(4) { background-color: #5c88be; }
+    .btn:nth-child(5) { background-color: #536586; }
+    .btn:nth-child(6) { background-color: #13274F; }
+    .btn:nth-child(7) { background-color: #0000FF; }
+    .btn:nth-child(8) { background-color: #007FFF; }
+</style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="question">Where are you from?</div>
+        <div class="options">
+            <button class="btn" onclick="selectOption('Delhi')">Delhi</button>
+            <button class="btn" onclick="selectOption('Bangalore')">Bangalore</button>
+            <button class="btn" onclick="selectOption('Mumbai')">Mumbai</button>
+            <button class="btn" onclick="selectOption('Hyderabad')">Hyderabad</button>
+            <button class="btn" onclick="selectOption('Kolkata')">Kolkata</button>
+            <button class="btn" onclick="selectOption('Chennai')">Chennai</button>
+            <button class="btn" onclick="selectOption('Lucknow')">Lucknow</button>
+            <button class="btn" onclick="selectOption('Jaipur')">Jaipur</button>
+        </div>
+    </div>
+
+    <script>
+        function selectOption(option) {
+            alert('You selected: ' + option);
+            // You can perform further actions here based on the selected option
+        }
+    </script>
+</body>
+</html>

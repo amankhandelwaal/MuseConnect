@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4861cf, #ffffff); /* Gradient from pastel blue to white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333333;
+}
+
+.question {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Different shades of blue for each button */
+.btn:nth-child(1) { background-color: #0077b6; }
+.btn:nth-child(2) { background-color: #00BFFF; }
+.btn:nth-child(3) { background-color: #0066b2; }
+.btn:nth-child(4) { background-color: #5c88be; }
+.btn:nth-child(5) { background-color: #536586; }
+.btn:nth-child(6) { background-color: #13274F; }
+.btn:nth-child(7) { background-color: #0000FF; }
+.btn:nth-child(8) { background-color: #007FFF; }
